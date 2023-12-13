@@ -2,15 +2,16 @@ with open('DINOsc5.asm', 'a') as arquivo:
     l = [508, 1020, 1532, 2044, 2556, 3068, 3580, 4092, 4604, 5116, 5628, 6140, 6652, 7164, 7676, 8188, 8700, 9212, 9724, 10236, 10748, 11260, 11772, 12284, 12796, 13308, 13820, 14332, 14844, 15356, 15868, 16380, 16892, 17404, 17916, 18428, 18940, 19452, 19964, 20476, 20988, 21500, 22012, 22524, 23036, 23548, 24060, 24572, 25084]
 
     arquivo.write(
-        f".text\nlui $t9, 0x1001
+        f".text
+        \nlui $t9, 0x1001
         \n#COLOR PALETTE
-        \naddi $t0, $zero, 0X00B4FAFC #Light Cyan
-        \naddi $t5, $zero, 0X007BDCED #Cyan t1
-        \naddi $t6, $zero, 0X0049B6CD #Dark Cyan t2
-        \naddi $t1, $zero, 0X00930004 #Dark Red T3
-        \naddi $t2, $zero, 0X00C7041F #Ligth Red T4
-        \naddi $t3, $zero, 0X00000000 #Black T5
-        \naddi $t4, $zero, 0X00FFFD00 #Yellow T6
+        \naddi $t0, $zero, 0X0049B6CD #Dark Cyan
+        \naddi $t1, $zero, 0X007BDCED #Cyan
+        \naddi $t2, $zero, 0X00B4FAFC #Light Cyan
+        \naddi $t3, $zero, 0X00930004 #Dark Red
+        \naddi $t4, $zero, 0X00C7041F #Ligth Red
+        \naddi $t5, $zero, 0X00000000 #Black
+        \naddi $t6, $zero, 0X00FFFD00 #Yellow
         \n\n"
         )
 
