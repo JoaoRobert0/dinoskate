@@ -1,0 +1,43 @@
+Display Area: 131.072px
+Display height: 256px
+Display Width: 512px
+
+Unit height: 4px
+Unit Width: 4px
+
+Total Area Units : 8.192UG = (Display Area) / 4
+Total Units Height: 64UG
+Total Units Width: 128UG
+
+paleta de cores:
+0x00ffffff - branco
+0x00000000 - preto
+0X00FFFD00 - amarelo
+0x000100ff - azul
+0x00b00598 - rosa escuro
+0x00ff00da - rosa
+0x00903918 - marrom escuro
+0x00c04414 - marrom claro
+0X00930004 - vermelho escuro
+0X00C7041F - vermelho claro
+0x0049b6cd - ciano escuro
+0x007bdced - ciano
+0x00b4fafc - ciano claro
+
+#COLOR PALETTE
+addi $t0, $zero, 0X00B4FAFC #Light Cyan
+addi $t1, $zero, 0X00930004 #Dark Red
+addi $t2, $zero, 0X00C7041F #Ligth Red
+addi $t3, $zero, 0X00000000 #Black
+addi $t4, $zero, 0X00FFFD00 #Yellow
+
+*Se preocupar com a linha 49 ate a 62
+13 * 128 = 1664
+1664 * 16Frames(pulanndo de 4 em 4) = 26624
+
+*
+
+0 16 32 48 64 80 96 112 128
+0 12 28 44 60 76 92 108 124 128
+0 8  24 40 56 72 88 104 120 128
+0 4  20 36 52 68 84 100 116 124 128
