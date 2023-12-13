@@ -1,6 +1,8 @@
 .text
 	lui $t9, 0x1001
 	#COLOR PALETTE
+        addi $t0, $zero, 0X0049B6CD #Dark Cyan
+        addi $t1, $zero, 0X007BDCED #Cyan
 	addi $t2, $zero, 0X00B4FAFC #Light Cyan
 	addi $t3, $zero, 0X00930004 #Dark Red
 	addi $t4, $zero, 0X00C7041F #Ligth Red
